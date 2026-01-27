@@ -1,0 +1,134 @@
+{
+ "actions": [],
+ "creation": "2024-01-01 00:00:00",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "audit_title",
+  "audit_type",
+  "audit_framework",
+  "column_break_4",
+  "audit_status",
+  "planned_start_date",
+  "planned_end_date",
+  "section_break_8",
+  "audit_scope",
+  "audit_objectives",
+  "section_break_11",
+  "lead_auditor",
+  "entity_audited",
+  "department"
+ ],
+ "fields": [
+  {
+   "fieldname": "audit_title",
+   "fieldtype": "Data",
+   "label": "Audit Title",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "audit_type",
+   "fieldtype": "Select",
+   "label": "Audit Type",
+   "in_list_view": 1,
+   "options": "\nInternal Audit\nExternal Audit\nCompliance Audit\nSecurity Audit\nFinancial Audit\nOperational Audit"
+  },
+  {
+   "fieldname": "audit_framework",
+   "fieldtype": "Link",
+   "label": "Audit Framework",
+   "options": "Compliance Framework"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "audit_status",
+   "fieldtype": "Select",
+   "label": "Audit Status",
+   "in_list_view": 1,
+   "options": "\nPlanned\nIn Progress\nFieldwork Complete\nReporting\nCompleted",
+   "reqd": 1
+  },
+  {
+   "fieldname": "planned_start_date",
+   "fieldtype": "Date",
+   "label": "Planned Start Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "planned_end_date",
+   "fieldtype": "Date",
+   "label": "Planned End Date"
+  },
+  {
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break",
+   "label": "Audit Scope"
+  },
+  {
+   "fieldname": "audit_scope",
+   "fieldtype": "Text Editor",
+   "label": "Audit Scope"
+  },
+  {
+   "fieldname": "audit_objectives",
+   "fieldtype": "Text",
+   "label": "Audit Objectives"
+  },
+  {
+   "fieldname": "section_break_11",
+   "fieldtype": "Section Break",
+   "label": "Audit Team"
+  },
+  {
+   "fieldname": "lead_auditor",
+   "fieldtype": "Link",
+   "label": "Lead Auditor",
+   "options": "User",
+   "reqd": 1
+  },
+  {
+   "fieldname": "entity_audited",
+   "fieldtype": "Link",
+   "label": "Entity Audited",
+   "options": "Company"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-01-01 00:00:00",
+ "modified_by": "Administrator",
+ "module": "ES Risk and Compliance Management",
+ "name": "Audit Plan",
+ "owner": "Administrator",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "allow_rename": 1,
+ "autoname": "format:AUD-{#####}",
+ "naming_rule": "Expression",
+ "is_submittable": 1,
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1,
+   "submit": 1
+  }
+ ]
+}

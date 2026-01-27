@@ -1,0 +1,52 @@
+{
+ "actions": [],
+ "creation": "2024-01-01 00:00:00",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "control",
+  "compliance_status",
+  "score",
+  "notes"
+ ],
+ "fields": [
+  {
+   "fieldname": "control",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Control",
+   "options": "Control Set",
+   "reqd": 1
+  },
+  {
+   "fieldname": "compliance_status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Compliance Status",
+   "options": "\nCompliant\nPartially Compliant\nNon-Compliant\nNot Applicable\nNot Tested"
+  },
+  {
+   "fieldname": "score",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Score",
+   "precision": "2"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Small Text",
+   "label": "Notes"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-01-01 00:00:00",
+ "modified_by": "Administrator",
+ "module": "ES Risk and Compliance Management",
+ "name": "Assessment Control Result",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

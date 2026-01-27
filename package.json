@@ -1,0 +1,14 @@
+{
+  "name": "es_risk_compliance",
+  "version": "1.0.0",
+  "description": "Risk and Compliance Management for ERPNext - Backend Module",
+  "main": "esbuild.js",
+  "scripts": {
+    "build": "echo 'No frontend assets to build'"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "frappe": {
+    "build": false
+  }
+}

@@ -1,0 +1,265 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:CA-{#####}",
+ "creation": "2024-01-01 00:00:00",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "assessment_title",
+  "framework",
+  "assessment_type",
+  "column_break_4",
+  "assessment_status",
+  "assessment_date",
+  "due_date",
+  "section_break_8",
+  "scope",
+  "section_break_10",
+  "lead_assessor",
+  "assessment_team",
+  "column_break_13",
+  "entity_assessed",
+  "department",
+  "section_break_16",
+  "controls_assessed",
+  "section_break_18",
+  "overall_score",
+  "compliance_percentage",
+  "column_break_21",
+  "compliant_controls",
+  "non_compliant_controls",
+  "partially_compliant_controls",
+  "section_break_25",
+  "findings",
+  "section_break_27",
+  "executive_summary",
+  "recommendations",
+  "section_break_30",
+  "next_assessment_date",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "assessment_title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Assessment Title",
+   "reqd": 1
+  },
+  {
+   "fieldname": "framework",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Framework",
+   "options": "Compliance Framework",
+   "reqd": 1
+  },
+  {
+   "fieldname": "assessment_type",
+   "fieldtype": "Select",
+   "label": "Assessment Type",
+   "options": "\nSelf Assessment\nInternal Audit\nExternal Audit\nPenetration Test\nVulnerability Assessment\nGap Analysis"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "assessment_status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Assessment Status",
+   "options": "\nPlanned\nIn Progress\nUnder Review\nCompleted\nCancelled",
+   "reqd": 1
+  },
+  {
+   "fieldname": "assessment_date",
+   "fieldtype": "Date",
+   "label": "Assessment Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "due_date",
+   "fieldtype": "Date",
+   "label": "Due Date"
+  },
+  {
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break",
+   "label": "Scope"
+  },
+  {
+   "fieldname": "scope",
+   "fieldtype": "Text Editor",
+   "label": "Scope"
+  },
+  {
+   "fieldname": "section_break_10",
+   "fieldtype": "Section Break",
+   "label": "Assessment Team"
+  },
+  {
+   "fieldname": "lead_assessor",
+   "fieldtype": "Link",
+   "label": "Lead Assessor",
+   "options": "User",
+   "reqd": 1
+  },
+  {
+   "fieldname": "assessment_team",
+   "fieldtype": "Table",
+   "label": "Assessment Team",
+   "options": "Assessment Team Member"
+  },
+  {
+   "fieldname": "column_break_13",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "entity_assessed",
+   "fieldtype": "Link",
+   "label": "Entity Assessed",
+   "options": "Company"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
+  },
+  {
+   "fieldname": "section_break_16",
+   "fieldtype": "Section Break",
+   "label": "Controls Assessed"
+  },
+  {
+   "fieldname": "controls_assessed",
+   "fieldtype": "Table",
+   "label": "Controls Assessed",
+   "options": "Assessment Control Result"
+  },
+  {
+   "fieldname": "section_break_18",
+   "fieldtype": "Section Break",
+   "label": "Assessment Results"
+  },
+  {
+   "fieldname": "overall_score",
+   "fieldtype": "Float",
+   "label": "Overall Score",
+   "precision": "2"
+  },
+  {
+   "fieldname": "compliance_percentage",
+   "fieldtype": "Percent",
+   "label": "Compliance Percentage"
+  },
+  {
+   "fieldname": "column_break_21",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "compliant_controls",
+   "fieldtype": "Int",
+   "label": "Compliant Controls",
+   "read_only": 1
+  },
+  {
+   "fieldname": "non_compliant_controls",
+   "fieldtype": "Int",
+   "label": "Non-Compliant Controls",
+   "read_only": 1
+  },
+  {
+   "fieldname": "partially_compliant_controls",
+   "fieldtype": "Int",
+   "label": "Partially Compliant Controls",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_25",
+   "fieldtype": "Section Break",
+   "label": "Findings"
+  },
+  {
+   "fieldname": "findings",
+   "fieldtype": "Table",
+   "label": "Findings",
+   "options": "Assessment Finding"
+  },
+  {
+   "fieldname": "section_break_27",
+   "fieldtype": "Section Break",
+   "label": "Summary & Recommendations"
+  },
+  {
+   "fieldname": "executive_summary",
+   "fieldtype": "Text Editor",
+   "label": "Executive Summary"
+  },
+  {
+   "fieldname": "recommendations",
+   "fieldtype": "Text Editor",
+   "label": "Recommendations"
+  },
+  {
+   "fieldname": "section_break_30",
+   "fieldtype": "Section Break",
+   "label": "Follow-up"
+  },
+  {
+   "fieldname": "next_assessment_date",
+   "fieldtype": "Date",
+   "label": "Next Assessment Date"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Compliance Assessment",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-01-01 00:00:00",
+ "modified_by": "Administrator",
+ "module": "ES Risk and Compliance Management",
+ "name": "Compliance Assessment",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Compliance Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

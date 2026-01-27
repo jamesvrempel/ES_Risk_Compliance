@@ -1,0 +1,225 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:RTP-{####}",
+ "creation": "2024-01-01 00:00:00",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "plan_title",
+  "related_risk",
+  "treatment_strategy",
+  "column_break_4",
+  "status",
+  "priority",
+  "created_date",
+  "section_break_8",
+  "plan_description",
+  "section_break_10",
+  "assigned_to",
+  "approver",
+  "column_break_13",
+  "target_start_date",
+  "target_completion_date",
+  "actual_completion_date",
+  "section_break_17",
+  "estimated_cost",
+  "actual_cost",
+  "budget_approved",
+  "section_break_21",
+  "action_items",
+  "section_break_23",
+  "success_criteria",
+  "monitoring_plan",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "plan_title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Plan Title",
+   "reqd": 1
+  },
+  {
+   "fieldname": "related_risk",
+   "fieldtype": "Link",
+   "label": "Related Risk",
+   "options": "Risk Register"
+  },
+  {
+   "fieldname": "treatment_strategy",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Treatment Strategy",
+   "options": "\nAvoid\nMitigate\nTransfer\nAccept",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "\nDraft\nPlanned\nIn Progress\nUnder Review\nCompleted\nOn Hold\nCancelled",
+   "reqd": 1
+  },
+  {
+   "fieldname": "priority",
+   "fieldtype": "Select",
+   "label": "Priority",
+   "options": "\nCritical\nHigh\nMedium\nLow"
+  },
+  {
+   "fieldname": "created_date",
+   "fieldtype": "Date",
+   "label": "Created Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break",
+   "label": "Plan Details"
+  },
+  {
+   "fieldname": "plan_description",
+   "fieldtype": "Text Editor",
+   "label": "Plan Description"
+  },
+  {
+   "fieldname": "section_break_10",
+   "fieldtype": "Section Break",
+   "label": "Responsibility & Timeline"
+  },
+  {
+   "fieldname": "assigned_to",
+   "fieldtype": "Link",
+   "label": "Assigned To",
+   "options": "User",
+   "reqd": 1
+  },
+  {
+   "fieldname": "approver",
+   "fieldtype": "Link",
+   "label": "Approver",
+   "options": "User"
+  },
+  {
+   "fieldname": "column_break_13",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "target_start_date",
+   "fieldtype": "Date",
+   "label": "Target Start Date"
+  },
+  {
+   "fieldname": "target_completion_date",
+   "fieldtype": "Date",
+   "label": "Target Completion Date"
+  },
+  {
+   "fieldname": "actual_completion_date",
+   "fieldtype": "Date",
+   "label": "Actual Completion Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_17",
+   "fieldtype": "Section Break",
+   "label": "Budget"
+  },
+  {
+   "fieldname": "estimated_cost",
+   "fieldtype": "Currency",
+   "label": "Estimated Cost"
+  },
+  {
+   "fieldname": "actual_cost",
+   "fieldtype": "Currency",
+   "label": "Actual Cost"
+  },
+  {
+   "fieldname": "budget_approved",
+   "fieldtype": "Check",
+   "label": "Budget Approved"
+  },
+  {
+   "fieldname": "section_break_21",
+   "fieldtype": "Section Break",
+   "label": "Action Items"
+  },
+  {
+   "fieldname": "action_items",
+   "fieldtype": "Table",
+   "label": "Action Items",
+   "options": "Treatment Action Item"
+  },
+  {
+   "fieldname": "section_break_23",
+   "fieldtype": "Section Break",
+   "label": "Success Criteria & Monitoring"
+  },
+  {
+   "fieldname": "success_criteria",
+   "fieldtype": "Small Text",
+   "label": "Success Criteria"
+  },
+  {
+   "fieldname": "monitoring_plan",
+   "fieldtype": "Small Text",
+   "label": "Monitoring Plan"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Risk Treatment Plan",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-01-01 00:00:00",
+ "modified_by": "Administrator",
+ "module": "ES Risk and Compliance Management",
+ "name": "Risk Treatment Plan",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Risk Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

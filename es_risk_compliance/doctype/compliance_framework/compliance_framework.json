@@ -1,0 +1,198 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:framework_name",
+ "creation": "2024-01-01 00:00:00",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "framework_name",
+  "framework_code",
+  "framework_type",
+  "column_break_4",
+  "status",
+  "version",
+  "effective_date",
+  "section_break_8",
+  "description",
+  "section_break_10",
+  "issuing_authority",
+  "regulatory_body",
+  "jurisdiction",
+  "column_break_14",
+  "industry_sector",
+  "applicability",
+  "mandatory",
+  "section_break_18",
+  "control_sets",
+  "section_break_20",
+  "framework_url",
+  "documentation_link",
+  "section_break_23",
+  "related_frameworks"
+ ],
+ "fields": [
+  {
+   "fieldname": "framework_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Framework Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "framework_code",
+   "fieldtype": "Data",
+   "label": "Framework Code"
+  },
+  {
+   "fieldname": "framework_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Framework Type",
+   "options": "\nRegulatory\nStandard\nBest Practice\nInternal Policy\nContractual"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "\nActive\nDraft\nUnder Review\nDeprecated\nSuperseded"
+  },
+  {
+   "fieldname": "version",
+   "fieldtype": "Data",
+   "label": "Version"
+  },
+  {
+   "fieldname": "effective_date",
+   "fieldtype": "Date",
+   "label": "Effective Date"
+  },
+  {
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break",
+   "label": "Framework Details"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text Editor",
+   "label": "Description"
+  },
+  {
+   "fieldname": "section_break_10",
+   "fieldtype": "Section Break",
+   "label": "Regulatory Information"
+  },
+  {
+   "fieldname": "issuing_authority",
+   "fieldtype": "Data",
+   "label": "Issuing Authority"
+  },
+  {
+   "fieldname": "regulatory_body",
+   "fieldtype": "Data",
+   "label": "Regulatory Body"
+  },
+  {
+   "fieldname": "jurisdiction",
+   "fieldtype": "Data",
+   "label": "Jurisdiction"
+  },
+  {
+   "fieldname": "column_break_14",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "industry_sector",
+   "fieldtype": "Select",
+   "label": "Industry Sector",
+   "options": "\nFinancial Services\nHealthcare\nTechnology\nManufacturing\nRetail\nGovernment\nEducation\nAll Sectors"
+  },
+  {
+   "fieldname": "applicability",
+   "fieldtype": "Small Text",
+   "label": "Applicability"
+  },
+  {
+   "fieldname": "mandatory",
+   "fieldtype": "Check",
+   "label": "Mandatory Compliance"
+  },
+  {
+   "fieldname": "section_break_18",
+   "fieldtype": "Section Break",
+   "label": "Control Sets"
+  },
+  {
+   "fieldname": "control_sets",
+   "fieldtype": "Table",
+   "label": "Control Sets",
+   "options": "Framework Control Set"
+  },
+  {
+   "fieldname": "section_break_20",
+   "fieldtype": "Section Break",
+   "label": "References"
+  },
+  {
+   "fieldname": "framework_url",
+   "fieldtype": "Data",
+   "label": "Framework URL"
+  },
+  {
+   "fieldname": "documentation_link",
+   "fieldtype": "Data",
+   "label": "Documentation Link"
+  },
+  {
+   "fieldname": "section_break_23",
+   "fieldtype": "Section Break",
+   "label": "Related Frameworks"
+  },
+  {
+   "fieldname": "related_frameworks",
+   "fieldtype": "Table",
+   "label": "Related Frameworks",
+   "options": "Related Framework Item"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-01-01 00:00:00",
+ "modified_by": "Administrator",
+ "module": "ES Risk and Compliance Management",
+ "name": "Compliance Framework",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Compliance Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

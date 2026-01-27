@@ -1,0 +1,135 @@
+{
+ "actions": [],
+ "creation": "2024-01-01 00:00:00",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "issue_title",
+  "issue_type",
+  "severity",
+  "column_break_4",
+  "status",
+  "reported_date",
+  "due_date",
+  "section_break_8",
+  "description",
+  "section_break_10",
+  "reported_by",
+  "assigned_to",
+  "resolution",
+  "resolved_date"
+ ],
+ "fields": [
+  {
+   "fieldname": "issue_title",
+   "fieldtype": "Data",
+   "label": "Issue Title",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "issue_type",
+   "fieldtype": "Select",
+   "label": "Issue Type",
+   "in_list_view": 1,
+   "options": "\nSecurity Issue\nCompliance Gap\nPolicy Violation\nControl Deficiency\nOperational Issue"
+  },
+  {
+   "fieldname": "severity",
+   "fieldtype": "Select",
+   "label": "Severity",
+   "in_list_view": 1,
+   "options": "\nCritical\nHigh\nMedium\nLow",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "in_list_view": 1,
+   "options": "\nOpen\nIn Progress\nUnder Review\nResolved\nClosed\nReopened",
+   "reqd": 1
+  },
+  {
+   "fieldname": "reported_date",
+   "fieldtype": "Date",
+   "label": "Reported Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "due_date",
+   "fieldtype": "Date",
+   "label": "Due Date"
+  },
+  {
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break",
+   "label": "Issue Details"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text Editor",
+   "label": "Description"
+  },
+  {
+   "fieldname": "section_break_10",
+   "fieldtype": "Section Break",
+   "label": "Assignment"
+  },
+  {
+   "fieldname": "reported_by",
+   "fieldtype": "Link",
+   "label": "Reported By",
+   "options": "User"
+  },
+  {
+   "fieldname": "assigned_to",
+   "fieldtype": "Link",
+   "label": "Assigned To",
+   "options": "User",
+   "reqd": 1
+  },
+  {
+   "fieldname": "resolution",
+   "fieldtype": "Text",
+   "label": "Resolution"
+  },
+  {
+   "fieldname": "resolved_date",
+   "fieldtype": "Date",
+   "label": "Resolved Date"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-01-01 00:00:00",
+ "modified_by": "Administrator",
+ "module": "ES Risk and Compliance Management",
+ "name": "Issue Tracker",
+ "owner": "Administrator",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "allow_rename": 1,
+ "autoname": "format:ISSUE-{#####}",
+ "naming_rule": "Expression",
+ "is_submittable": 1,
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1,
+   "submit": 1
+  }
+ ]
+}

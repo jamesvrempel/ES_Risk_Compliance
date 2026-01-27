@@ -1,0 +1,244 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:CTRL-{#####}",
+ "creation": "2024-01-01 00:00:00",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "control_id",
+  "control_title",
+  "control_domain",
+  "column_break_4",
+  "control_type",
+  "control_status",
+  "priority",
+  "section_break_8",
+  "control_objective",
+  "control_description",
+  "implementation_guidance",
+  "section_break_12",
+  "control_owner",
+  "responsible_team",
+  "column_break_15",
+  "implementation_date",
+  "last_review_date",
+  "next_review_date",
+  "section_break_19",
+  "control_effectiveness",
+  "testing_frequency",
+  "last_test_date",
+  "column_break_23",
+  "test_result",
+  "test_evidence",
+  "section_break_26",
+  "related_frameworks",
+  "section_break_28",
+  "related_risks",
+  "related_assets"
+ ],
+ "fields": [
+  {
+   "fieldname": "control_id",
+   "fieldtype": "Data",
+   "label": "Control ID",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "control_title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Control Title",
+   "reqd": 1
+  },
+  {
+   "fieldname": "control_domain",
+   "fieldtype": "Select",
+   "label": "Control Domain",
+   "options": "\nAccess Control\nAsset Management\nCryptography\nPhysical Security\nOperations Security\nCommunications Security\nSystem Development\nSupplier Relationships\nIncident Management\nBusiness Continuity\nCompliance\nHuman Resources"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "control_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Control Type",
+   "options": "\nPreventive\nDetective\nCorrective\nDirective\nCompensating"
+  },
+  {
+   "fieldname": "control_status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Control Status",
+   "options": "\nPlanned\nPartially Implemented\nImplemented\nTested\nOperational\nNeeds Improvement\nIneffective"
+  },
+  {
+   "fieldname": "priority",
+   "fieldtype": "Select",
+   "label": "Priority",
+   "options": "\nCritical\nHigh\nMedium\nLow"
+  },
+  {
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break",
+   "label": "Control Details"
+  },
+  {
+   "fieldname": "control_objective",
+   "fieldtype": "Small Text",
+   "label": "Control Objective"
+  },
+  {
+   "fieldname": "control_description",
+   "fieldtype": "Text Editor",
+   "label": "Control Description"
+  },
+  {
+   "fieldname": "implementation_guidance",
+   "fieldtype": "Text Editor",
+   "label": "Implementation Guidance"
+  },
+  {
+   "fieldname": "section_break_12",
+   "fieldtype": "Section Break",
+   "label": "Responsibility"
+  },
+  {
+   "fieldname": "control_owner",
+   "fieldtype": "Link",
+   "label": "Control Owner",
+   "options": "User",
+   "reqd": 1
+  },
+  {
+   "fieldname": "responsible_team",
+   "fieldtype": "Link",
+   "label": "Responsible Team",
+   "options": "Department"
+  },
+  {
+   "fieldname": "column_break_15",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "implementation_date",
+   "fieldtype": "Date",
+   "label": "Implementation Date"
+  },
+  {
+   "fieldname": "last_review_date",
+   "fieldtype": "Date",
+   "label": "Last Review Date"
+  },
+  {
+   "fieldname": "next_review_date",
+   "fieldtype": "Date",
+   "label": "Next Review Date"
+  },
+  {
+   "fieldname": "section_break_19",
+   "fieldtype": "Section Break",
+   "label": "Control Testing"
+  },
+  {
+   "fieldname": "control_effectiveness",
+   "fieldtype": "Select",
+   "label": "Control Effectiveness",
+   "options": "\nNot Tested\nNot Effective\nPartially Effective\nEffective\nHighly Effective"
+  },
+  {
+   "fieldname": "testing_frequency",
+   "fieldtype": "Select",
+   "label": "Testing Frequency",
+   "options": "\nDaily\nWeekly\nMonthly\nQuarterly\nBi-Annually\nAnnually\nAs Needed"
+  },
+  {
+   "fieldname": "last_test_date",
+   "fieldtype": "Date",
+   "label": "Last Test Date"
+  },
+  {
+   "fieldname": "column_break_23",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "test_result",
+   "fieldtype": "Select",
+   "label": "Test Result",
+   "options": "\nPassed\nPassed with Exceptions\nFailed\nNot Tested"
+  },
+  {
+   "fieldname": "test_evidence",
+   "fieldtype": "Attach",
+   "label": "Test Evidence"
+  },
+  {
+   "fieldname": "section_break_26",
+   "fieldtype": "Section Break",
+   "label": "Framework Mapping"
+  },
+  {
+   "fieldname": "related_frameworks",
+   "fieldtype": "Table",
+   "label": "Related Frameworks",
+   "options": "Control Framework Mapping"
+  },
+  {
+   "fieldname": "section_break_28",
+   "fieldtype": "Section Break",
+   "label": "Related Items"
+  },
+  {
+   "fieldname": "related_risks",
+   "fieldtype": "Table MultiSelect",
+   "label": "Related Risks",
+   "options": "Risk Register"
+  },
+  {
+   "fieldname": "related_assets",
+   "fieldtype": "Table MultiSelect",
+   "label": "Related Assets",
+   "options": "Asset Register"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-01-01 00:00:00",
+ "modified_by": "Administrator",
+ "module": "ES Risk and Compliance Management",
+ "name": "Control Set",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Compliance Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

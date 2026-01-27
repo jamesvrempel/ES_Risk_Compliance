@@ -1,0 +1,43 @@
+{
+ "actions": [],
+ "creation": "2024-01-01 00:00:00",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "related_framework",
+  "relationship_type",
+  "overlap_percentage"
+ ],
+ "fields": [
+  {
+   "fieldname": "related_framework",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Related Framework",
+   "options": "Compliance Framework",
+   "reqd": 1
+  },
+  {
+   "fieldname": "relationship_type",
+   "fieldtype": "Select",
+   "label": "Relationship Type",
+   "options": "\nSupersedes\nSuperseded By\nSupplements\nAligns With\nConflicts With"
+  },
+  {
+   "fieldname": "overlap_percentage",
+   "fieldtype": "Percent",
+   "label": "Overlap Percentage"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-01-01 00:00:00",
+ "modified_by": "Administrator",
+ "module": "ES Risk and Compliance Management",
+ "name": "Related Framework Item",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

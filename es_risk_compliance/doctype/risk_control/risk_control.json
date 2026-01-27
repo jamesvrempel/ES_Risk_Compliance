@@ -1,0 +1,64 @@
+{
+ "actions": [],
+ "creation": "2024-01-01 00:00:00",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "control_name",
+  "control_type",
+  "control_effectiveness",
+  "implementation_date",
+  "responsible_person",
+  "control_description"
+ ],
+ "fields": [
+  {
+   "fieldname": "control_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Control Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "control_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Control Type",
+   "options": "\nPreventive\nDetective\nCorrective\nDirective"
+  },
+  {
+   "fieldname": "control_effectiveness",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Control Effectiveness",
+   "options": "\nNot Effective\nPartially Effective\nEffective\nHighly Effective"
+  },
+  {
+   "fieldname": "implementation_date",
+   "fieldtype": "Date",
+   "label": "Implementation Date"
+  },
+  {
+   "fieldname": "responsible_person",
+   "fieldtype": "Link",
+   "label": "Responsible Person",
+   "options": "User"
+  },
+  {
+   "fieldname": "control_description",
+   "fieldtype": "Small Text",
+   "label": "Control Description"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-01-01 00:00:00",
+ "modified_by": "Administrator",
+ "module": "ES Risk and Compliance Management",
+ "name": "Risk Control",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

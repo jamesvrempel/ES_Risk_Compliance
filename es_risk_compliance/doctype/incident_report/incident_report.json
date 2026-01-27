@@ -1,0 +1,153 @@
+{
+ "actions": [],
+ "creation": "2024-01-01 00:00:00",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "incident_title",
+  "incident_type",
+  "severity",
+  "column_break_4",
+  "status",
+  "incident_date",
+  "detected_date",
+  "section_break_8",
+  "description",
+  "impact_description",
+  "section_break_11",
+  "incident_commander",
+  "reported_by",
+  "section_break_14",
+  "root_cause",
+  "resolution_summary",
+  "lessons_learned"
+ ],
+ "fields": [
+  {
+   "fieldname": "incident_title",
+   "fieldtype": "Data",
+   "label": "Incident Title",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "incident_type",
+   "fieldtype": "Select",
+   "label": "Incident Type",
+   "in_list_view": 1,
+   "options": "\nSecurity Breach\nData Leak\nSystem Outage\nPolicy Violation\nPhysical Security\nOther"
+  },
+  {
+   "fieldname": "severity",
+   "fieldtype": "Select",
+   "label": "Severity",
+   "in_list_view": 1,
+   "options": "\nCritical\nHigh\nMedium\nLow",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "in_list_view": 1,
+   "options": "\nReported\nInvestigating\nContained\nResolved\nClosed",
+   "reqd": 1
+  },
+  {
+   "fieldname": "incident_date",
+   "fieldtype": "Datetime",
+   "label": "Incident Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "detected_date",
+   "fieldtype": "Datetime",
+   "label": "Detected Date"
+  },
+  {
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break",
+   "label": "Incident Details"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text Editor",
+   "label": "Description"
+  },
+  {
+   "fieldname": "impact_description",
+   "fieldtype": "Text",
+   "label": "Impact Description"
+  },
+  {
+   "fieldname": "section_break_11",
+   "fieldtype": "Section Break",
+   "label": "Response Team"
+  },
+  {
+   "fieldname": "incident_commander",
+   "fieldtype": "Link",
+   "label": "Incident Commander",
+   "options": "User",
+   "reqd": 1
+  },
+  {
+   "fieldname": "reported_by",
+   "fieldtype": "Link",
+   "label": "Reported By",
+   "options": "User"
+  },
+  {
+   "fieldname": "section_break_14",
+   "fieldtype": "Section Break",
+   "label": "Resolution"
+  },
+  {
+   "fieldname": "root_cause",
+   "fieldtype": "Text",
+   "label": "Root Cause"
+  },
+  {
+   "fieldname": "resolution_summary",
+   "fieldtype": "Text",
+   "label": "Resolution Summary"
+  },
+  {
+   "fieldname": "lessons_learned",
+   "fieldtype": "Text",
+   "label": "Lessons Learned"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-01-01 00:00:00",
+ "modified_by": "Administrator",
+ "module": "ES Risk and Compliance Management",
+ "name": "Incident Report",
+ "owner": "Administrator",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "allow_rename": 1,
+ "autoname": "format:INC-{#####}",
+ "naming_rule": "Expression",
+ "is_submittable": 1,
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1,
+   "submit": 1
+  }
+ ]
+}

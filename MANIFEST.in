@@ -1,0 +1,13 @@
+include README.md
+include LICENSE
+include INSTALLATION.md
+include requirements.txt
+recursive-include es_risk_compliance *.py
+recursive-include es_risk_compliance *.json
+recursive-include es_risk_compliance *.js
+recursive-include es_risk_compliance *.css
+recursive-include es_risk_compliance *.html
+recursive-include es_risk_compliance *.md
+recursive-include es_risk_compliance/public *
+recursive-include es_risk_compliance/templates *
+recursive-include es_risk_compliance/fixtures *

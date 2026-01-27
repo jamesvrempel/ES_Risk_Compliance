@@ -1,0 +1,175 @@
+{
+ "actions": [],
+ "creation": "2024-01-01 00:00:00",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "vendor_name",
+  "assessment_date",
+  "assessment_type",
+  "column_break_4",
+  "risk_level",
+  "assessment_status",
+  "section_break_7",
+  "services_provided",
+  "data_access_level",
+  "section_break_10",
+  "security_score",
+  "compliance_score",
+  "overall_risk_score",
+  "section_break_14",
+  "assessor",
+  "approved_by",
+  "section_break_17",
+  "findings",
+  "recommendations",
+  "next_assessment_date"
+ ],
+ "fields": [
+  {
+   "fieldname": "vendor_name",
+   "fieldtype": "Link",
+   "label": "Vendor Name",
+   "options": "Supplier",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "assessment_date",
+   "fieldtype": "Date",
+   "label": "Assessment Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "assessment_type",
+   "fieldtype": "Select",
+   "label": "Assessment Type",
+   "in_list_view": 1,
+   "options": "\nInitial Assessment\nAnnual Review\nIncident-Driven\nRe-Assessment"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "risk_level",
+   "fieldtype": "Select",
+   "label": "Risk Level",
+   "in_list_view": 1,
+   "options": "\nCritical\nHigh\nMedium\nLow"
+  },
+  {
+   "fieldname": "assessment_status",
+   "fieldtype": "Select",
+   "label": "Assessment Status",
+   "in_list_view": 1,
+   "options": "\nPlanned\nIn Progress\nCompleted\nApproved",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_7",
+   "fieldtype": "Section Break",
+   "label": "Assessment Details"
+  },
+  {
+   "fieldname": "services_provided",
+   "fieldtype": "Text",
+   "label": "Services Provided"
+  },
+  {
+   "fieldname": "data_access_level",
+   "fieldtype": "Select",
+   "label": "Data Access Level",
+   "options": "\nNo Access\nPublic Data\nInternal Data\nConfidential Data\nHighly Confidential"
+  },
+  {
+   "fieldname": "section_break_10",
+   "fieldtype": "Section Break",
+   "label": "Risk Assessment"
+  },
+  {
+   "fieldname": "security_score",
+   "fieldtype": "Float",
+   "label": "Security Score",
+   "precision": "2"
+  },
+  {
+   "fieldname": "compliance_score",
+   "fieldtype": "Float",
+   "label": "Compliance Score",
+   "precision": "2"
+  },
+  {
+   "fieldname": "overall_risk_score",
+   "fieldtype": "Float",
+   "label": "Overall Risk Score",
+   "precision": "2"
+  },
+  {
+   "fieldname": "section_break_14",
+   "fieldtype": "Section Break",
+   "label": "Assessment Team"
+  },
+  {
+   "fieldname": "assessor",
+   "fieldtype": "Link",
+   "label": "Assessor",
+   "options": "User",
+   "reqd": 1
+  },
+  {
+   "fieldname": "approved_by",
+   "fieldtype": "Link",
+   "label": "Approved By",
+   "options": "User"
+  },
+  {
+   "fieldname": "section_break_17",
+   "fieldtype": "Section Break",
+   "label": "Findings & Recommendations"
+  },
+  {
+   "fieldname": "findings",
+   "fieldtype": "Text Editor",
+   "label": "Findings"
+  },
+  {
+   "fieldname": "recommendations",
+   "fieldtype": "Text Editor",
+   "label": "Recommendations"
+  },
+  {
+   "fieldname": "next_assessment_date",
+   "fieldtype": "Date",
+   "label": "Next Assessment Date"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-01-01 00:00:00",
+ "modified_by": "Administrator",
+ "module": "ES Risk and Compliance Management",
+ "name": "Vendor Risk Assessment",
+ "owner": "Administrator",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "allow_rename": 1,
+ "autoname": "format:VRA-{#####}",
+ "naming_rule": "Expression",
+ "is_submittable": 1,
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1,
+   "submit": 1
+  }
+ ]
+}

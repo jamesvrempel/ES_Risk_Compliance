@@ -1,0 +1,165 @@
+{
+ "actions": [],
+ "creation": "2024-01-01 00:00:00",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "finding_title",
+  "audit_plan",
+  "finding_type",
+  "column_break_4",
+  "severity",
+  "status",
+  "finding_date",
+  "section_break_8",
+  "condition",
+  "criteria",
+  "cause",
+  "effect",
+  "section_break_13",
+  "recommendation",
+  "management_response",
+  "section_break_16",
+  "responsible_person",
+  "target_date",
+  "actual_resolution_date"
+ ],
+ "fields": [
+  {
+   "fieldname": "finding_title",
+   "fieldtype": "Data",
+   "label": "Finding Title",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "audit_plan",
+   "fieldtype": "Link",
+   "label": "Audit Plan",
+   "options": "Audit Plan"
+  },
+  {
+   "fieldname": "finding_type",
+   "fieldtype": "Select",
+   "label": "Finding Type",
+   "in_list_view": 1,
+   "options": "\nControl Deficiency\nNon-Compliance\nProcess Gap\nDocumentation Issue\nObservation"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "severity",
+   "fieldtype": "Select",
+   "label": "Severity",
+   "in_list_view": 1,
+   "options": "\nCritical\nHigh\nMedium\nLow",
+   "reqd": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "in_list_view": 1,
+   "options": "\nOpen\nIn Remediation\nManagement Review\nResolved\nClosed",
+   "reqd": 1
+  },
+  {
+   "fieldname": "finding_date",
+   "fieldtype": "Date",
+   "label": "Finding Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break",
+   "label": "Finding Details"
+  },
+  {
+   "fieldname": "condition",
+   "fieldtype": "Text Editor",
+   "label": "Condition (What was found)"
+  },
+  {
+   "fieldname": "criteria",
+   "fieldtype": "Text",
+   "label": "Criteria (What should be)"
+  },
+  {
+   "fieldname": "cause",
+   "fieldtype": "Text",
+   "label": "Cause (Why it happened)"
+  },
+  {
+   "fieldname": "effect",
+   "fieldtype": "Text",
+   "label": "Effect (Impact)"
+  },
+  {
+   "fieldname": "section_break_13",
+   "fieldtype": "Section Break",
+   "label": "Recommendation & Response"
+  },
+  {
+   "fieldname": "recommendation",
+   "fieldtype": "Text Editor",
+   "label": "Recommendation"
+  },
+  {
+   "fieldname": "management_response",
+   "fieldtype": "Text Editor",
+   "label": "Management Response"
+  },
+  {
+   "fieldname": "section_break_16",
+   "fieldtype": "Section Break",
+   "label": "Remediation"
+  },
+  {
+   "fieldname": "responsible_person",
+   "fieldtype": "Link",
+   "label": "Responsible Person",
+   "options": "User",
+   "reqd": 1
+  },
+  {
+   "fieldname": "target_date",
+   "fieldtype": "Date",
+   "label": "Target Date"
+  },
+  {
+   "fieldname": "actual_resolution_date",
+   "fieldtype": "Date",
+   "label": "Actual Resolution Date"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-01-01 00:00:00",
+ "modified_by": "Administrator",
+ "module": "ES Risk and Compliance Management",
+ "name": "Audit Finding",
+ "owner": "Administrator",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "allow_rename": 1,
+ "autoname": "format:AF-{#####}",
+ "naming_rule": "Expression",
+ "is_submittable": 1,
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1,
+   "submit": 1
+  }
+ ]
+}

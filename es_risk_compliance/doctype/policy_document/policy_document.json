@@ -1,0 +1,153 @@
+{
+ "actions": [],
+ "creation": "2024-01-01 00:00:00",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "policy_name",
+  "policy_code",
+  "policy_type",
+  "column_break_4",
+  "status",
+  "version",
+  "effective_date",
+  "section_break_8",
+  "policy_purpose",
+  "policy_scope",
+  "policy_content",
+  "section_break_12",
+  "policy_owner",
+  "approved_by",
+  "column_break_15",
+  "approval_date",
+  "review_frequency",
+  "next_review_date"
+ ],
+ "fields": [
+  {
+   "fieldname": "policy_name",
+   "fieldtype": "Data",
+   "label": "Policy Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "policy_code",
+   "fieldtype": "Data",
+   "label": "Policy Code"
+  },
+  {
+   "fieldname": "policy_type",
+   "fieldtype": "Select",
+   "label": "Policy Type",
+   "in_list_view": 1,
+   "options": "\nSecurity Policy\nCompliance Policy\nHR Policy\nIT Policy\nOperational Policy\nGovernance Policy"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "in_list_view": 1,
+   "options": "\nDraft\nUnder Review\nApproved\nPublished\nRetired",
+   "reqd": 1
+  },
+  {
+   "fieldname": "version",
+   "fieldtype": "Data",
+   "label": "Version"
+  },
+  {
+   "fieldname": "effective_date",
+   "fieldtype": "Date",
+   "label": "Effective Date"
+  },
+  {
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break",
+   "label": "Policy Details"
+  },
+  {
+   "fieldname": "policy_purpose",
+   "fieldtype": "Text",
+   "label": "Policy Purpose"
+  },
+  {
+   "fieldname": "policy_scope",
+   "fieldtype": "Text",
+   "label": "Policy Scope"
+  },
+  {
+   "fieldname": "policy_content",
+   "fieldtype": "Text Editor",
+   "label": "Policy Content"
+  },
+  {
+   "fieldname": "section_break_12",
+   "fieldtype": "Section Break",
+   "label": "Ownership & Review"
+  },
+  {
+   "fieldname": "policy_owner",
+   "fieldtype": "Link",
+   "label": "Policy Owner",
+   "options": "User",
+   "reqd": 1
+  },
+  {
+   "fieldname": "approved_by",
+   "fieldtype": "Link",
+   "label": "Approved By",
+   "options": "User"
+  },
+  {
+   "fieldname": "column_break_15",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "approval_date",
+   "fieldtype": "Date",
+   "label": "Approval Date"
+  },
+  {
+   "fieldname": "review_frequency",
+   "fieldtype": "Select",
+   "label": "Review Frequency",
+   "options": "\nQuarterly\nBi-Annually\nAnnually\nBiennially"
+  },
+  {
+   "fieldname": "next_review_date",
+   "fieldtype": "Date",
+   "label": "Next Review Date"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-01-01 00:00:00",
+ "modified_by": "Administrator",
+ "module": "ES Risk and Compliance Management",
+ "name": "Policy Document",
+ "owner": "Administrator",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "allow_rename": 1,
+ "autoname": "field:policy_name",
+ "naming_rule": "By fieldname",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ]
+}

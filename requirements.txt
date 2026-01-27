@@ -1,0 +1,2 @@
+# ES Risk and Compliance Management
+# No additional requirements beyond ERPNext

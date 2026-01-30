@@ -1,0 +1,272 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2026-01-30 08:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "risk_title",
+  "risk_category",
+  "risk_owner",
+  "risk_status",
+  "priority",
+  "date_identified",
+  "column_break_1",
+  "section_break_2",
+  "risk_description",
+  "threat_description",
+  "vulnerability_description",
+  "impact_description",
+  "section_break_3",
+  "likelihood_score",
+  "impact_score",
+  "inherent_risk_rating",
+  "column_break_4",
+  "residual_likelihood",
+  "residual_impact",
+  "residual_risk_rating",
+  "section_break_5",
+  "existing_controls",
+  "section_break_6",
+  "treatment_plans",
+  "section_break_7",
+  "next_review_date",
+  "last_review_date",
+  "review_frequency",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "RISK-.####",
+   "reqd": 1
+  },
+  {
+   "fieldname": "risk_title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Risk Title",
+   "reqd": 1
+  },
+  {
+   "fieldname": "risk_category",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Risk Category",
+   "options": "Risk Category"
+  },
+  {
+   "fieldname": "risk_owner",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Risk Owner",
+   "options": "User",
+   "reqd": 1
+  },
+  {
+   "fieldname": "risk_status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Identified\nAnalyzed\nTreated\nMonitored\nClosed",
+   "reqd": 1
+  },
+  {
+   "fieldname": "priority",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Priority",
+   "options": "Critical\nHigh\nMedium\nLow"
+  },
+  {
+   "fieldname": "date_identified",
+   "fieldtype": "Date",
+   "label": "Date Identified",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_2",
+   "fieldtype": "Section Break",
+   "label": "Risk Description"
+  },
+  {
+   "fieldname": "risk_description",
+   "fieldtype": "Text Editor",
+   "label": "Risk Description"
+  },
+  {
+   "fieldname": "threat_description",
+   "fieldtype": "Text",
+   "label": "Threat Description"
+  },
+  {
+   "fieldname": "vulnerability_description",
+   "fieldtype": "Text",
+   "label": "Vulnerability Description"
+  },
+  {
+   "fieldname": "impact_description",
+   "fieldtype": "Text",
+   "label": "Impact Description"
+  },
+  {
+   "fieldname": "section_break_3",
+   "fieldtype": "Section Break",
+   "label": "Inherent Risk Assessment"
+  },
+  {
+   "fieldname": "likelihood_score",
+   "fieldtype": "Select",
+   "label": "Likelihood Score",
+   "options": "1 - Rare\n2 - Unlikely\n3 - Possible\n4 - Likely\n5 - Almost Certain",
+   "reqd": 1
+  },
+  {
+   "fieldname": "impact_score",
+   "fieldtype": "Select",
+   "label": "Impact Score",
+   "options": "1 - Insignificant\n2 - Minor\n3 - Moderate\n4 - Major\n5 - Catastrophic",
+   "reqd": 1
+  },
+  {
+   "fieldname": "inherent_risk_rating",
+   "fieldtype": "Data",
+   "label": "Inherent Risk Rating",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "residual_likelihood",
+   "fieldtype": "Select",
+   "label": "Residual Likelihood",
+   "options": "1 - Rare\n2 - Unlikely\n3 - Possible\n4 - Likely\n5 - Almost Certain"
+  },
+  {
+   "fieldname": "residual_impact",
+   "fieldtype": "Select",
+   "label": "Residual Impact",
+   "options": "1 - Insignificant\n2 - Minor\n3 - Moderate\n4 - Major\n5 - Catastrophic"
+  },
+  {
+   "fieldname": "residual_risk_rating",
+   "fieldtype": "Data",
+   "label": "Residual Risk Rating",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_5",
+   "fieldtype": "Section Break",
+   "label": "Existing Controls"
+  },
+  {
+   "fieldname": "existing_controls",
+   "fieldtype": "Table",
+   "label": "Existing Controls",
+   "options": "Risk Control"
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break",
+   "label": "Treatment Plans"
+  },
+  {
+   "fieldname": "treatment_plans",
+   "fieldtype": "Table",
+   "label": "Treatment Plans",
+   "options": "Risk Treatment Item"
+  },
+  {
+   "fieldname": "section_break_7",
+   "fieldtype": "Section Break",
+   "label": "Review Information"
+  },
+  {
+   "fieldname": "next_review_date",
+   "fieldtype": "Date",
+   "label": "Next Review Date"
+  },
+  {
+   "fieldname": "last_review_date",
+   "fieldtype": "Date",
+   "label": "Last Review Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "review_frequency",
+   "fieldtype": "Select",
+   "label": "Review Frequency",
+   "options": "Monthly\nQuarterly\nBi-Annually\nAnnually"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Risk Register",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-01-30 08:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "ES Risk and Compliance",
+ "name": "Risk Register",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Risk Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Auditor",
+   "share": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "risk_title",
+ "track_changes": 1
+}

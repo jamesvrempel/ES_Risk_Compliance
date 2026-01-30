@@ -1,0 +1,25 @@
+{
+  "name": "es_risk_compliance",
+  "version": "2.0.0",
+  "description": "ES Risk and Compliance Management - Clean Build v2",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"No tests specified\" && exit 0"
+  },
+  "keywords": [
+    "frappe",
+    "erpnext",
+    "risk-management",
+    "compliance",
+    "grc"
+  ],
+  "author": "ES Australia",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jamesvrempel/es_risk_compliance.git"
+  },
+  "frappe": {
+    "build": false
+  }
+}
